@@ -5,6 +5,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://unpkg.com/lucide@latest"></script>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&amp;display=swap" rel="stylesheet">
+    <script src="https://link.msgsndr.com/js/form_embed.js"></script>
     <style>
       body { font-family: 'Roboto', sans-serif; }
       .clip-circle { clip-path: circle(50% at 50% 50%); }
@@ -39,25 +40,25 @@
             </div>
           </div>
 
-          <!-- Desktop Menu -->
           <nav class="hidden md:flex space-x-8 items-center">
-            <a href="#" class="text-slate-600 hover:text-[#005BC5] font-medium text-sm transition-colors">
+            <a href="#inicio" class="text-slate-600 hover:text-[#005BC5] font-medium text-sm transition-colors">
               Inicio
             </a>
-            <a href="#" class="text-slate-600 hover:text-[#005BC5] font-medium text-sm transition-colors">
+            <a href="#planes" class="text-slate-600 hover:text-[#005BC5] font-medium text-sm transition-colors">
               Planes
             </a>
-            <a href="#" class="text-slate-600 hover:text-[#005BC5] font-medium text-sm transition-colors">
+            <a href="#app-movil" class="text-slate-600 hover:text-[#005BC5] font-medium text-sm transition-colors">
               App Móvil
             </a>
-            <a href="#" class="text-slate-600 hover:text-[#005BC5] font-medium text-sm transition-colors">
-              Soporte
+            <a href="#soporte" class="text-slate-600 hover:text-[#005BC5] font-medium text-sm transition-colors">
+              Contacto
             </a>
           </nav>
 
+
           <!-- CTA -->
           <div class="hidden md:flex items-center">
-            <a href="#" class="bg-[#EE3124] hover:bg-red-700 text-white text-sm font-semibold py-2 px-6 rounded-full transition-colors">
+            <a href="#soporte" class="bg-[#EE3124] hover:bg-red-700 text-white text-sm font-semibold py-2 px-6 rounded-full transition-colors">
               Contratar Ahora
             </a>
           </div>
@@ -73,7 +74,7 @@
     </header>
 
     <!-- 2. HERO PRINCIPAL CON DEMO WHATSAPP -->
-    <section class="overflow-hidden bg-white border-gray-200 border-b relative">
+    <section id="inicio" class="overflow-hidden bg-white border-gray-200 border-b relative">
       <div class="max-w-7xl mx-auto">
         <div class="grid grid-cols-1 lg:grid-cols-2 sm:px-6 lg:px-8 pt-12 pr-4 pb-12 pl-4 gap-x-12 gap-y-12 items-center">
           <!-- Text Content -->
@@ -414,7 +415,7 @@
     </section>
 
     <!-- 5. NUEVA SECCIÓN: APP SHOWCASE & WEB -->
-    <section class="overflow-hidden bg-blue-50/50 pt-24 pb-24 relative">
+    <section id="app-movil" class="overflow-hidden bg-blue-50/50 pt-24 pb-24 relative">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-x-16 gap-y-16 items-center">
           <!-- Text Content -->
@@ -757,6 +758,45 @@
       </div>
     </section>
 
+    <!-- 8.5 CONTACTO -->
+    <section id="soporte" class="py-20 sm:py-28 bg-slate-50 border-t border-gray-200">
+      <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+
+        <!-- Title -->
+        <div class="text-center">
+          <h2 class="text-3xl sm:text-5xl font-light text-[#005BC5]">
+            Contáctanos
+          </h2>
+        </div>
+
+        <!-- Form -->
+        <div class="overflow-hidden">
+          <div class="p-4 sm:p-6">
+            <iframe
+              src="https://api.leadconnectorhq.com/widget/form/QG6jAcp6wGi1Z1WwYxdU"
+              style="width:100%;height:680px;border:none;border-radius:16px;background:white;"
+              id="inline-QG6jAcp6wGi1Z1WwYxdU"
+              data-layout="{'id':'INLINE'}"
+              data-trigger-type="alwaysShow"
+              data-trigger-value=""
+              data-activation-type="alwaysActivated"
+              data-activation-value=""
+              data-deactivation-type="neverDeactivate"
+              data-deactivation-value=""
+              data-form-name="agendacentral_form"
+              data-height="609"
+              data-layout-iframe-id="inline-QG6jAcp6wGi1Z1WwYxdU"
+              data-form-id="QG6jAcp6wGi1Z1WwYxdU"
+              title="agendacentral_form"
+            ></iframe>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+
+
     <!-- 9. FOOTER -->
     <footer class="bg-[#F4F6F9] text-slate-600 pt-12 pb-8 border-t border-gray-200">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -900,3 +940,7 @@
     </script>
   
 </body></html>
+
+<style>
+  html { scroll-behavior: smooth; }
+</style>
